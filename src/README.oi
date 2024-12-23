@@ -1,0 +1,142 @@
+Mood Tracker Harian
+
+Deskripsi Program
+
+Mood Tracker Harian adalah aplikasi berbasis Java dengan antarmuka pengguna berbasis Swing yang memungkinkan pengguna untuk mencatat mood harian mereka beserta catatan tambahan. Aplikasi ini dirancang untuk mempermudah pengguna dalam melacak kondisi emosional mereka dari waktu ke waktu, menyimpan data ke file, serta mengelola riwayat mood yang telah dicatat.
+
+Fitur Utama
+
+Menambah Mood Baru
+
+Pengguna dapat memilih mood dari daftar yang disediakan dengan ikon visual.
+
+Catatan tambahan dapat ditambahkan untuk mendeskripsikan mood secara lebih rinci.
+
+Melihat Riwayat Mood
+
+Riwayat mood yang telah dicatat dapat dilihat dalam bentuk tabel.
+
+Pengguna dapat menyegarkan data, menghapus entri tertentu, atau kembali ke menu utama.
+
+Menyimpan Riwayat ke File
+
+Data riwayat mood dapat disimpan ke file teks untuk keperluan pencatatan jangka panjang.
+
+Struktur Program
+
+1. Kelas MoodTrackerApp
+
+Kelas utama yang mengelola antarmuka pengguna dan logika aplikasi.
+
+Komponen Utama:
+
+Menu Utama:
+
+Tombol "Tambah Mood Baru" untuk menambah entri mood.
+
+Tombol "Lihat Riwayat Mood" untuk melihat riwayat.
+
+Tombol "Simpan ke File" untuk menyimpan data riwayat ke file teks.
+
+Jendela Tambah Mood:
+
+Panel yang menampilkan ikon mood beserta catatan opsional.
+
+Tombol "Simpan Mood" untuk menyimpan mood ke daftar riwayat.
+
+Jendela Riwayat:
+
+Tabel yang menampilkan riwayat mood beserta tanggal dan catatan.
+
+Tombol "Refresh" untuk memuat ulang data riwayat.
+
+Tombol "Hapus Riwayat Terpilih" untuk menghapus entri tertentu.
+
+2. Kelas MoodEntry
+
+Merepresentasikan data mood yang terdiri dari:
+
+Mood: Mood yang dipilih pengguna.
+
+Catatan: Catatan tambahan (opsional).
+
+Tanggal: Tanggal mood dicatat (otomatis diatur ke tanggal saat ini).
+
+3. Kelas BackgroundPanel
+
+Kelas ini digunakan untuk menggambar latar belakang kustom pada setiap panel di aplikasi.
+
+Modul yang Digunakan
+
+Swing (GUI): Untuk membuat antarmuka pengguna.
+
+java.io: Untuk menyimpan dan membaca data dari file.
+
+java.time.LocalDate: Untuk mendapatkan tanggal saat ini secara otomatis.
+
+java.util.ArrayList: Untuk menyimpan daftar riwayat mood.
+
+File dan Path
+
+Gambar Latar dan Ikon:
+
+Disimpan di path seperti C://Users//lenovo//IdeaProjects//UAP//images//.
+
+Riwayat Mood:
+
+Data riwayat disimpan di C:\Users\lenovo\IdeaProjects\UAP\riwayat_mood.txt.
+
+Penanganan Kesalahan
+
+Aplikasi menangani kesalahan dengan memberikan pesan kepada pengguna, misalnya:
+
+Jika mood belum dipilih saat menyimpan mood.
+
+Jika terjadi kesalahan saat membuka file atau menyimpan data.
+
+Cara Menggunakan Aplikasi
+
+Jalankan Program: Eksekusi file utama MoodTrackerApp.
+
+Tambah Mood Baru:
+
+Klik tombol "Tambah Mood Baru".
+
+Pilih mood dari ikon yang tersedia.
+
+Tambahkan catatan opsional jika diperlukan.
+
+Klik "Simpan Mood".
+
+Lihat Riwayat:
+
+Klik tombol "Lihat Riwayat Mood".
+
+Tabel akan menampilkan riwayat mood.
+
+Gunakan tombol "Refresh" untuk memuat ulang data atau "Hapus Riwayat Terpilih" untuk menghapus data tertentu.
+
+Simpan ke File:
+
+Klik tombol "Simpan ke File" untuk menyimpan riwayat mood ke file teks.
+
+Teknologi yang Digunakan
+
+Java SE: Untuk pengembangan aplikasi.
+
+Swing: Untuk antarmuka pengguna.
+
+File Handling: Untuk menyimpan dan membaca riwayat mood.
+
+Peningkatan yang Dapat Dilakukan
+
+Menambahkan analisis statistik dari riwayat mood.
+
+Integrasi dengan layanan cloud untuk menyimpan data secara online.
+
+Fitur pengingat untuk mencatat mood secara rutin.
+
+Catatan Akhir
+
+Aplikasi Mood Tracker Harian membantu pengguna untuk mencatat dan melacak kondisi emosional mereka dengan antarmuka yang intuitif. Dengan fitur yang terus berkembang, aplikasi ini dapat menjadi alat yang berguna dalam menjaga kesehatan mental.
+
